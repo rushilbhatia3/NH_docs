@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Z Docking Solutions LLC - Home</title>
+
+    <link rel="icon" href="img/EZIcon.png">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/home.css">
+    <script src="js/home.js"></script>
+</head>
+
+<body>
+
+    <!--NavBar-->
+    <nav class="navbar fixed-top navbar-expand-lg justify-content-center">
+        <a class="navbar-brand" href="#"><img src="img/EZIcon.png" alt="EZ Icon"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-around" id="navbarNavDropdown" style="flex-grow: 0;">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../../index.html">Main Page</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/price/price.html">Dock Packages and Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/contact/contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Other Links
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="./pages/sureStep/sureStep.html">Sure-Step</a>
+                        <a class="dropdown-item" href="./pages/partsAcessories/partsAccessories.html">Dock Parts and Accessories</a>
+                        <a class="dropdown-item" onclick="warranty()">Warranty</a>
+                        <a class="dropdown-item" href="./pages/testimonialFeedback/testimonialFeedback.html">Testimonials and Feedback</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Warranty Pop-up-->
+    <div id="surround" onclick="surround()">
+        <div id="warranty">
+            <h2>Warranty</h2>
+            <div id="warrantyText">
+                E-Z Docking Solutions LLC warranties all E-Z Docking Solutions brand docks purchased new by the original owner to be free from defects in the aluminum structure and welds for a period of 15 years. E-Z Docking Solutions LLC will at its option, repair or replace, without charge, or allow credit for any such goods found on examination by E-Z Docking Solutions to be defective under normal use and service, provided E-Z Docking Solutions is promptly notified in writing upon discovery of such defects. The buyers remedies with respect to defective goods shall be exclusively limited as provided above, and in no event shall E-Z Docking Solutions be liable for incidental or consequential damages of any nature. All repair work must be done by E-Z Docking Solutions. This warranty does not cover damage caused by improper use, installation, removal, overloading accident, neglect or harmful alterations or repairs made by others, damage by snow or ice, fallen trees, boat collisions, electrolysis, severe weather conditions, acts of war, and all acts of God.
+            </div>
+            <h3>E-Z Docking Solutions, LLC</h3>
+        </div>
+    </div>
+    
+
+    <!--Main Content-->
+    <div id="mainContent">
+
+        <!--Welcome Section-->
+        <div id="welcome">
+
+            <div id="imageHolder">
+                <img src="img/background.png" alt="Background for the Main Dock Image">
+                <img id="boat" src="img/boat.png" alt="Boat Image for the Main Dock Image">
+                <img src="img/water.png" alt="Water Image to cover the boat">
+                <img src="img/dock.png" onclick="moveBoat()" alt="Dock Image for the Main Dock Image">
+            </div>
+
+            <div id="welcomeText">
+                <h1>E-Z Docking Solutions</h1>
+                <p>Check out our NEW Kayak Launch Dock in Other Products!!!</p>
+            </div>
+
+            <div id="intro">
+                <h2>Sectional - Floating - Rolling</h2>
+                <p>We make waterfront living E-Z with our premium aluminum docking systems manufactured in Northwood, NH.</p>
+            </div>
+
+        </div>
+
+        <!--About Section-->
+        <div id="about">
+            <div id="aboutImg">
+                <img src="img/largeDock.jpeg" alt="About Deck">
+            </div>
+
+            <div id="aboutText">
+                <h2>ABOUT OUR DOCKS</h2>
+                <p>Designed by craftsman with over 30 years experience in the welding and fabrication business; these docks are rugged, dependable, and the best value for your dollar!</p>
+                <h3>Premium Features:</h3>
+                <ul>
+                    <li>fully welded using marine grade T-6061 extruded aluminum</li>
+                    <li>feature Sure-step decking, making them lightweight, non-slip, heat resistant, and friendly on the feet</li>
+                    <li>environmentally friendly</li>
+                    <li>15 year warranty</li>
+                    <li>E-Z installation and removal</li>
+                    <li>FREE onsite evaluations</li>
+                </ul>
+                <p>Since our docks are all manufactured right here, they are fully customizable to accommodate all of your docking needs. We can easily build custom sizes and configurations without charging you premium prices. We design and build our docks to last your lifetime!</p>
+            </div>
+        </div>
+
+
+        <!--Service Section-->
+        <div id="service">
+            <div id="serviceImg">
+                <img src="img/Twin_Tamarack.jpg" alt="Service Image">
+            </div>
+            <div id="serviceText">
+                <h2>Our Services</h2>
+                <p>Dock installation service is $100 per section. Dock removal service is also $100 per section. We ARE doing NEW dock installations but our subcontractors are handling fall removals and spring re-installs. Our repeat customer base has just grown too large to accommodate all customers in a timely fashion! Please contact Adam Worster at AT Worster Enterprises directly to schedule these! (603) 793-1351</p>
+            </div>
+        </div>
+
+        <!--Contact Section-->
+        <div id="contact">
+            <div id="contactImg">
+                <img src="img/Shore.jpg" alt="Contact Image">
+            </div>
+            <div id="contactText">
+                <h2>Stop By Or Call Us Today!</h2>
+                <p>E-Z Docking Solutions LLC is a family owned and operated company founded on the principles of integrity, quality, and fair pricing. Our goal is to build you the best quality product to meet your unique needs without breaking the bank. We have over 4,000 happy customers all throughout New England.
+                    <br>
+                    Please <a href="#" style="text-decoration: underline;">contact us</a> anytime! We look forward to hearing from you.
+                </p>
+            </div>
+        </div>
+
+        <!--Contact1 Section-->
+        <div id="contact1">
+            <div id="contact1Img">
+                <img src="img/JetSki.jpg" alt="Contact1 image">
+            </div>
+            <div id="contact1Text">
+                <h3>E-Z DOCKING SOLUTIONS LLC</h3>
+                <h3>1548 FIRST NH TURNPIKE</h3>
+                <h3>NORTHWOOD, NH 03261</h3>
+                <h3>PH: (603) 942-7355</h3>
+                <h3>EMAIL: <a href="mailto:ezdocking@yahoo.com" style="text-decoration: underline;">ezdocking@yahoo.com</a></h3>
+            </div>
+        </div>
+
+        <!--Extra Note Section-->
+        <div id="extra">
+            <div id="extraImg">
+                <img src="img/Kayak_Rack.jpg" alt="Extra Note Image">
+            </div>
+            <div id="extraText">
+                <p>We also offer <b>custom welding and fabrication services</b> which can be priced by giving us a call or stopping by.</p>
+            </div>
+        </div>
+
+        <!--Affilation Section-->
+        <div id="affilation">
+            <div id="affilationImg">
+                <img src="img/Miller.jpg" alt="Affilation Image">
+            </div>
+            <div id="affilationText">
+                <p>***We are not affiliated with</p>
+                <img src="img/ezlogo.jpg" alt="EZ Logo">
+                <p>Manufacturer of Plastic Floating Docks.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div id="footer">
+        <div class="card" style="width: 18rem; border: none; background-color: rgb(235, 235, 235)">
+            <div class="card-body">
+                <h5 class="card-title">Copyright</h5>
+                <p class="card-text">Copyright 2016 E-Z Docking Solutions LLC. All rights reserved.</p>
+                <a href="http://nhdocks.com/home#:~:text=Web%20Hosting%20by%20Aabaco" class="card-link">Web Hosting by Aabaco</a>
+            </div>
+        </div>
+        <div class="card" style="width: 20rem; border: none; background-color: rgb(235, 235, 235)">
+            <div class="card-body">
+                <h5 class="card-title">Contact</h5>
+                <p class="card-text">ph: (603) 942-7355</p>
+                <a href="mailto:ezdocking@yahoo.com" class="card-link">ezdocking@yahoo.com</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem; border: none; background-color: rgb(235, 235, 235)">
+            <div class="card-body">
+                <h5 class="card-title">Address</h5>
+                <p class="card-text">E-Z Docking Solutions LLC 1548 First NH Turnpike Northwood, NH 03261</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
