@@ -1,0 +1,256 @@
+body {
+    font-family: “Playfair Display”, “Didot”, "Times New Roman", Times, serif;
+
+    color: #1d1613;
+
+    background-color: #dbd0bf;
+
+    scroll-behavior: smooth;
+    overscroll-behavior: none;
+}
+
+a {
+    color: #1d1613;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(68, 68, 68);
+}
+
+nav.navbar {
+    background-color: #ebebeb;
+    animation: navBarColor1 1s ease;
+}
+
+nav.navbar:hover {
+    background-color: #dbd0bf;
+    animation: navBarColor 1s ease;
+}
+
+@keyframes navBarColor {
+    from {
+        background-color: #ebebeb;
+    }
+
+    to {
+        background-color: #dbd0bf;
+        ;
+    }
+}
+
+@keyframes navBarColor1 {
+    from {
+        background-color: #dbd0bf;
+    }
+
+    to {
+        background-color: #ebebeb;
+    }
+}
+
+nav img {
+    width: 50px;
+    transition: width 0.5s ease;
+
+    margin-right: 10px;
+}
+
+nav.navbar img:hover {
+    width: 75px;
+}
+
+div#surround {
+    width:100vw;
+    height:100vh;
+
+    background-color: #0000005e;
+
+    z-index: 10;
+    display: none;
+
+    position: fixed;
+}
+
+div#warranty {
+
+    padding: 10px;
+    width: 70vw;
+    display: none;
+    opacity: 0;
+    transition: opacity ease 1s;
+    position: fixed;
+    transform: translate(15vw,15vh);
+    text-align: center;
+    background-color: #d7f3f3;
+    z-index: 11;
+    border-radius: 15px;
+
+}
+
+div#warrantyText {
+    padding: 15px;
+    margin: 10px;
+    text-align: justify;
+    background-color: #ffffff3d;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 5px lightsteelblue;
+}
+
+
+div#mainContent {
+    display: grid;
+    justify-items: center;
+
+    margin-top: 50px;
+}
+
+div#welcome {
+
+    padding: 25px;
+
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+
+    background-color: rgb(219 208 191);
+    box-shadow: 0px 5px 10px lightgoldenrodyellow;
+}
+
+div#welcome div#welcomeText {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 47vw;
+    transition: width 0.5s ease;
+}
+
+div#welcome div#welcomeText h1 {
+
+    width: 100%;
+}
+
+div#welcome div#welcomeText p {
+    text-align: center;
+}
+
+div#welcome div#imageHolder {
+    width: 45vw;
+    height: 45vw;
+    padding-top: 35px;
+    padding-left: 45px;
+    transition: width 0.5s ease;
+
+    display: flex;
+    justify-content: start;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+div#welcome div#imageHolder:hover {
+    width: 60vw;
+}
+
+#imageHolder:hover ~ #welcomeText {
+    width: 35vw;
+}
+
+div#welcome div#imageHolder img {
+    max-width: 75vw;
+
+    position: absolute;
+}
+
+div#footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100vw;
+    height: max-content;
+    justify-content: space-evenly;
+    background-color: rgb(240, 240, 240) !important;
+
+    margin-top: 25px;
+}
+
+div.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-top: 15px;
+
+    background-color: #8294b3;
+
+    width: 85%;
+    padding: 20px;
+}
+
+div.box img {
+    width: 100%;
+}
+
+div.box div.boxImage {
+    width: auto;
+    transition: width 0.5s ease;
+}
+
+div.box div.boxImage:hover {
+    width: 55vw;
+}
+
+div.box div.boxText {
+    width: 50vw;
+
+    transition: width 0.5s ease;
+}
+
+.boxImage:hover ~ .boxText {
+    width: 42vw;
+}
+
+div.box div {
+
+    padding: 10px;
+}
+
+div.box div h2,
+h3 {
+    text-align: center;
+}
+
+div#commentSect {
+    background-color: #c19a85;
+}
+
+form {
+    width:100%;
+}
+
+
+@media screen and (max-width: 1000px) {
+    div#welcome div#imageHolder {
+        width: 75vw;
+        height: 50vw;
+    }
+
+    div.box div.boxImage {
+        width: 95vw;
+    }
+
+    div.box div.boxText {
+        width: auto;
+    }
+
+
+}

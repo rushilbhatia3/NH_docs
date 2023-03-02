@@ -1,0 +1,306 @@
+body {
+    font-family: sans-serif;
+
+    color: black;
+
+    background-color: rgb(219 208 191);
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(68, 68, 68);
+}
+
+nav.navbar { background-color: aliceblue; animation: navBarColor1 1s ease; }
+
+nav.navbar:hover { background-color: rgb(219 208 191); animation: navBarColor 1s ease; }
+
+@keyframes navBarColor {
+    from {background-color: aliceblue;}
+    to {background-color: rgb(219 208 191);}
+}
+
+@keyframes navBarColor1 {
+    from {background-color: rgb(219 208 191);}
+    to {background-color: aliceblue;}
+}
+
+nav img {
+    width: 50px;
+    transition: width 0.5s ease;
+
+    margin-right: 10px;
+}
+
+nav.navbar img:hover {
+    width: 75px;
+}
+
+div#surround {
+    width:100vw;
+    height:100vh;
+
+    background-color: #0000005e;
+
+    z-index: 10;
+    display: none;
+
+    position: fixed;
+}
+
+div#warranty {
+
+    padding: 10px;
+    width: 70vw;
+    display: none;
+    opacity: 0;
+    transition: opacity ease 1s;
+    position: fixed;
+    transform: translate(15vw,15vh);
+    text-align: center;
+    background-color: #d7f3f3;
+    z-index: 11;
+    border-radius: 15px;
+
+}
+
+div#warrantyText {
+    padding: 15px;
+    margin: 10px;
+    text-align: justify;
+    background-color: #ffffff3d;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 5px lightsteelblue;
+}
+
+div#mainContent {
+    display: grid;
+    justify-items: center;
+
+    margin-top: 50px;
+
+    background-color: rgb(219 208 191);
+}
+
+div#welcome {
+
+    padding: 15px;
+
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+
+    background-color: rgb(219 208 191);
+    box-shadow: 0px 5px 10px lightgoldenrodyellow;
+}
+
+div#welcome div#welcomeText {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 47vw;
+    transition: width 0.5s ease;
+}
+
+div#welcome div#welcomeText h1 {
+
+    width: 100%;
+}
+
+div#welcome div#welcomeText p {
+    text-align: center;
+}
+
+div#welcome div#imageHolder {
+    width: 50vw;
+    height: 35vw;
+
+    transition: width 0.5s ease;
+
+    display: flex;
+    justify-content: start;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+div#welcome div#imageHolder:hover {
+    width: 60vw;
+}
+
+#imageHolder:hover ~ #welcomeText {
+    width: 35vw;
+}
+
+div#welcome div#intro {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+div#welcome div#imageHolder img {
+    max-width: 75vw;
+
+    position: absolute;
+}
+
+div.Package {
+
+    width: 90%;
+
+    text-align: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    padding: 15px;
+
+    margin-top: 25px;
+}
+
+div.Package p {
+    font-size: larger;
+}
+
+div.Package div.box {
+    display: flex;
+    justify-content: space-around;
+
+    width: 100%;
+
+    margin-top: 25px;
+}
+
+div.Package div.packageImg {
+    display: grid;
+
+    width:48vw;
+
+    transition: width 0.5s ease;
+
+    justify-items: center;
+}
+
+div.Package img {
+    width:40%;
+
+    padding: 5px;
+
+    transition: width ease 0.5s;
+}
+
+div.Package div.packageImg:hover {
+    width:50vw;
+}
+
+div.Package div.packageText {
+    display: grid;
+    transition: width 0.5s ease;
+    text-align: center;
+}
+
+div.Package div.packageText div {
+    display: grid;
+    
+    margin-bottom: 25px;
+}
+
+div.Package div.packageText table {
+    font-size: 1.5em;
+    padding: 5px;
+}
+
+div.Package div.packageText td {
+    padding: 5px;
+}
+
+div#Package1 {
+    background-color: #8294b3;
+}
+
+div#Package2 {
+    background-color: #c19a85;
+}
+
+div#Package2Img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+}
+
+div#Package2Img Img:hover {
+    width: 50%;
+}
+
+div#Package3 {
+    background-color: rgb(240, 240, 240);
+}
+
+div#Package4 {
+    background-color: #78807d;
+}
+
+div#Package5 {
+    background-color: #eacfca;
+}
+
+div#Package6 {
+    background-color: #8a766c;
+}
+
+div#Package7 {
+    background-color: rgb(240, 240, 240);
+}
+
+div#Package8 {
+    background-color: #c19a85;
+}
+
+div#Package9 {
+    background-color: #8294b3;
+}
+
+div#footer {
+
+    margin-top: 25px;
+
+    background-color: rgb(240, 240, 240) !important;
+
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center; 
+    width: 100vw; 
+    height: max-content;
+    justify-content: space-around;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    div#welcome div#imageHolder {
+        width: 75vw;
+        height: 50vw;
+    }
+
+    div.Package img {
+        width:90vw;
+    }
+
+    div.Package div.packageText {
+        width: 90vw;
+    }
+
+}

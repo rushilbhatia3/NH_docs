@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Z Docking Solutions LLC - Home</title>
+
+    <link rel="icon" href="../../img/EZIcon.png">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/price.css">
+
+    <script src="js/price.js"></script>
+</head>
+
+<body>
+
+    <!--NavBar-->
+    <nav class="navbar fixed-top navbar-expand-lg justify-content-center">
+        <a class="navbar-brand" href="#"><img src="../../img/EZIcon.png" alt="EZ Icon"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-around" id="navbarNavDropdown" style="flex-grow: 0;">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../../index.html">Main Page</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="../../index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../pages/price/price.html">Dock Packages and Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../pages/contact/contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Other Links
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="../../pages/sureStep/sureStep.html">Sure-Step</a>
+                        <a class="dropdown-item" href="../../pages/partsAcessories/partsAccessories.html">Dock Parts and Accessories</a>
+                        <a class="dropdown-item" onclick="warranty()">Warranty</a>
+                        <a class="dropdown-item" href="/pages/testimonialFeedback../../testimonialFeedback.html">Testimonials and Feedback</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Warranty Pop-up-->
+    <div id="surround" onclick="surround()">
+        <div id="warranty">
+            <h2>Warranty</h2>
+            <div id="warrantyText">
+                E-Z Docking Solutions LLC warranties all E-Z Docking Solutions brand docks purchased new by the original owner to be free from defects in the aluminum structure and welds for a period of 15 years. E-Z Docking Solutions LLC will at its option, repair or replace, without charge, or allow credit for any such goods found on examination by E-Z Docking Solutions to be defective under normal use and service, provided E-Z Docking Solutions is promptly notified in writing upon discovery of such defects. The buyers remedies with respect to defective goods shall be exclusively limited as provided above, and in no event shall E-Z Docking Solutions be liable for incidental or consequential damages of any nature. All repair work must be done by E-Z Docking Solutions. This warranty does not cover damage caused by improper use, installation, removal, overloading accident, neglect or harmful alterations or repairs made by others, damage by snow or ice, fallen trees, boat collisions, electrolysis, severe weather conditions, acts of war, and all acts of God.
+            </div>
+            <h3>E-Z Docking Solutions, LLC</h3>
+        </div>
+    </div>
+
+    <!--Main Content-->
+    <div id="mainContent">
+
+        <!--Welcome Section-->
+        <div id="welcome">
+
+            <div id="imageHolder">
+                <img src="../../img/Twin_Tamarack.jpg" alt="Background for the Main Dock Image">
+            </div>
+
+            <div id="welcomeText">
+                <h1>E-Z Docking Solutions</h1>
+                <p>Check out our NEW Kayak Launch Dock in Other Products!!!</p>
+            </div>
+
+            <div id="intro">
+                <h2>Leg Standing Dock Packages & 2021 Pricing</h2>
+                <p>Dock packages with Sure-step decking shown in 8' and 10' lengths. Standard docks available in 4', 5' or 6' wide.</p>
+            </div>
+
+        </div>
+
+        <!--Package1 Section-->
+        <div id="Package1" class="Package">
+            <h2>Package No. 1</h2>
+            <div class="box">
+                <div class="Container">
+                    <div id="Package1Img" class="packageImg">
+                        <img src="img/Package1.png" alt="Package1 10 feet dock image">
+                    </div>
+                    <div id="Package1Text" class="packageText">
+                        <div>
+                            <h3>10 Feet Length Price</h3>
+                            <table>
+                                <tr>
+                                    <th>Width</th>
+                                    <th>Price</th>
+                                </tr>
+                                <tr>
+                                    <td>4 Feet Wide</td>
+                                    <td>$1,208</td>
+                                </tr>
+                                <tr>
+                                    <td>5 Feet Wide</td>
+                                    <td>$1,473</td>
+                                </tr>
+                                <tr>
+                                    <td>6 Feet Wide</td>
+                                    <td>$1,740</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Container">
+                    <div id="Package1Img" class="packageImg">
+                        <img src="img/Package1_2.png" alt="Package1 10 feet dock image">
+                    </div>
+                    <div id="Package1Text" class="packageText">
+                        <div>
+                            <h3>8 Feet Length Price</h3>
+                            <table>
+                                <tr>
+                                    <th>Width</th>
+                                    <th>Price</th>
+                                </tr>
+                                <tr>
+                                    <td>4 Feet Wide</td>
+                                    <td>$1,012</td>
+                                </tr>
+                                <tr>
+                                    <td>5 Feet Wide</td>
+                                    <td>$1,278</td>
+                                </tr>
+                                <tr>
+                                    <td>6 Feet Wide</td>
+                                    <td>$1,544</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>Includes 2) 6' legs, bottom pads, safety caps, 2 finish end caps</p>
+        </div>
+
+        <!--Package2 Section-->
+        <div id="Package2" class="Package">
+            <h2>Package No. 2</h2>
+            <div class="box">
+                <div class="Container">
+                    <div id="Package2Img" class="packageImg">
+                        <img src="img/Package2.png" alt="Package1 10 feet dock image">
+                    </div>
+                    <div id="Package2Text" class="packageText">
+                        <div>
+                            <h3>10 Feet Length Price</h3>
+                            <table>
+                                <tr>
+                                    <th>Width</th>
+                                    <th>Price</th>
+                                </tr>
+                                <tr>
+                                    <td>4 Feet Wide</td>
+                                    <td>$2,507</td>
+                                </tr>
+                                <tr>
+                                    <td>5 Feet Wide</td>
+                                    <td>$3,039</td>
+                                </tr>
+                                <tr>
+                                    <td>6 Feet Wide</td>
+                                    <td>$3,571</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Container">
+                    <div id="Package2Img" class="packageImg">
+                        <img src="img/Package2_2.png" alt="Package1 10 feet dock image">
+                    </div>
+                    <div id="Package2Text" class="packageText">
+                        <div>
+                            <h3>8 Feet Length Price</h3>
+                            <table>
+                                <tr>
+                                    <th>Width</th>
+                                    <th>Price</th>
+                                </tr>
+                                <tr>
+                                    <td>4 Feet Wide</td>
+                                    <td>$2,116</td>
+                                </tr>
+                                <tr>
+                                    <td>5 Feet Wide</td>
+                                    <td>$2,648</td>
+                                </tr>
+                                <tr>
+                                    <td>6 Feet Wide</td>
+                                    <td>$3,180</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>Includes 4) 6' legs, bottom pads, safety caps, 2 finish end caps, 1 leg brace kit</p>
+        </div>
+
+        <!--Package3 Section-->
+        <div id="Package3" class="Package">
+            <h2>Package No. 3</h2>
+            <div class="box">
+                <div class="Container">
+                    <div id="Package3Img" class="packageImg">
+                        <img src="img/Package3.png" alt="Package1 10 feet dock image">
+                    </div>
+                    <div id="Package3Text" class="packageText">
+                        <div>
+                            <h3>10 Feet Length Price</h3>
+                            <table>
+                                <tr>
+                                    <th>Width</th>
+                                    <th>Price</th>
+                                </tr>
+                                <tr>
+                                    <td>4 Feet Wide</td>
+                                    <td>$3,769</td>
+                                </tr>
+                                <tr>
+                                    <td>5 Feet Wide</td>
+                                    <td>$4,566</td>
+                                </tr>
+                                <tr>
+                                    <td>6 Feet Wide</td>
+                                    <td>$5,362</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Container">
+                    <div id="Package3Img" class="packageImg">
+                        <img src="img/Package3_2.png" alt="Package1 10 feet dock image">
+                    </div>
+                    <div id="Package3Text" class="packageText">
+                        <div>
+                            <h3>8 Feet Length Price</h3>
+                            <table>
+                                <tr>
+                                    <th>Width</th>
+                                    <th>Price</th>
+                                </tr>
+                                <tr>
+                                    <td>4 Feet Wide</td>
+                                    <td>$3,182</td>
+                                </tr>
+                                <tr>
+                                    <td>5 Feet Wide</td>
+                                    <td>$3,979</td>
+                                </tr>
+                                <tr>
+                                    <td>6 Feet Wide</td>
+                                    <td>$4,776</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>Includes 6) 6' legs, bottom pads, safety caps, 2 finish end caps, 2 leg brace kits</p>
+        </div>
+
+        <!--Package4 Section-->
+        <div id="Package4" class="Package">
+            <h2>Package No. 4</h2>
+            <div class="box">
+                <div class="Container">
+                    <div id="Package4Img" class="packageImg">
+                        <img src="img/Package4.png" alt="Package1 10 feet dock image">
+                    </div>
+                    <div id="Package4Text" class="packageText">
+                        <div>
+                            <h3>10 Feet Length Price</h3>
+                            <table>
+                                <tr>
+                                    <th>Width</th>
+                                    <th>Price</th>
+                                </tr>
+                                <tr>
+                                    <td>4 Feet Wide</td>
+                                    <td>$5,029</td>
+                                </tr>
+                                <tr>
+                                    <td>5 Feet Wide</td>
+                                    <td>$6,092</td>
+                                </tr>
+                                <tr>
+                                    <td>6 Feet Wide</td>
+                                    <td>$7,161</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Container">
+                    <div id="Package4Img" class="packageImg">
+                        <img src="img/Package4_2.png" alt="Package1 10 feet dock image">
+                    </div>
+                    <div id="Package4Text" class="packageText">
+                        <div>
+                            <h3>8 Feet Length Price</h3>
+                            <table>
+                                <tr>
+                                    <th>Width</th>
+                                    <th>Price</th>
+                                </tr>
+                                <tr>
+                                    <td>4 Feet Wide</td>
+                                    <td>$4,247</td>
+                                </tr>
+                                <tr>
+                                    <td>5 Feet Wide</td>
+                                    <td>$5,310</td>
+                                </tr>
+                                <tr>
+                                    <td>6 Feet Wide</td>
+                                    <td>$6,379</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>Includes 8) 6' legs, bottom pads, safety caps, 2 finish end caps, 3 leg brace kits</p>
+        </div>
+
+        <!--Package5 Section-->
+        <div id="Package5" class="Package">
+            <h2>Package No. 5</h2>
+            <div class="box">
+                <div class="Container">
+                    <div id="Package5Img" class="packageImg">
+                        <img src="img/Package5.png" alt="Package1 10 feet dock image">
+                    </div>
+                    <div id="Package5Text" class="packageText">
+                        <div>
+                            <h3>10 Feet Length Price</h3>
+                            <table>
+                                <tr>
+                                    <th>Width</th>
+                                    <th>Price</th>
+                                </tr>
+                                <tr>
+                                    <td>4 Feet Wide</td>
+                                    <td>$3,673</td>
+                                </tr>
+                                <tr>
+                                    <td>5 Feet Wide</td>
+                                    <td>$4,433</td>
+                                </tr>
+                                <tr>
+                                    <td>6 Feet Wide</td>
+                                    <td>5,195</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Container">
+                    <div id="Package5Img" class="packageImg">
+                        <img src="img/Package5_2.png" alt="Package1 10 feet dock image">
+                    </div>
+                    <div id="Package5Text" class="packageText">
+                        <div>
+                            <h3>8 Feet Length Price</h3>
+                            <table>
+                                <tr>
+                                    <th>Width</th>
+                                    <th>Price</th>
+                                </tr>
+                                <tr>
+                                    <td>4 Feet Wide</td>
+                                    <td>$3,087</td>
+                                </tr>
+                                <tr>
+                                    <td>5 Feet Wide</td>
+                                    <td>$3,847</td>
+                                </tr>
+                                <tr>
+                                    <td>6 Feet Wide</td>
+                                    <td>$4,608</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>Includes 6) 6' legs, bottom pads, safety caps, 3 finish end caps, 2 leg brace kits, 1 L-kit</p>
+        </div>
+
+        <!--Package6 Section-->
+        <div id="Package6" class="Package">
+            <h2>Package No. 6</h2>
+            <div class="box">
+                <div class="Container">
+                    <div id="Package6Img" class="packageImg">
+                        <img src="img/Package6.png" alt="Package1 10 feet dock image">
+                    </div>
+                    <div id="Package6Text" class="packageText">
+                        <div>
+                            <h3>10 Feet Length Price</h3>
+                            <table>
+                                <tr>
+                                    <th>Width</th>
+                                    <th>Price</th>
+                                </tr>
+                                <tr>
+                                    <td>4 Feet Wide</td>
+                                    <td>$3,892</td>
+                                </tr>
+                                <tr>
+                                    <td>5 Feet Wide</td>
+                                    <td>$4,690</td>
+                                </tr>
+                                <tr>
+                                    <td>6 Feet Wide</td>
+                                    <td>$5,487</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Container">
+                    <div id="Package6Img" class="packageImg">
+                        <img src="img/Package6_2.png" alt="Package1 10 feet dock image">
+                    </div>
+                    <div id="Package6Text" class="packageText">
+                        <div>
+                            <h3>8 Feet Length Price</h3>
+                            <table>
+                                <tr>
+                                    <th>Width</th>
+                                    <th>Price</th>
+                                </tr>
+                                <tr>
+                                    <td>4 Feet Wide</td>
+                                    <td>$3,305</td>
+                                </tr>
+                                <tr>
+                                    <td>5 Feet Wide</td>
+                                    <td>$4,103</td>
+                                </tr>
+                                <tr>
+                                    <td>6 Feet Wide</td>
+                                    <td>$4,900</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>Includes 6) 6' legs, bottom pads, safety caps, 4 finish end caps, 2 leg brace kits, 1 L-kit</p>
+        </div>
+
+        <!--Package7 Section-->
+        <div id="Package7" class="Package">
+            <h2>Package No. 7</h2>
+            <div class="box">
+                <div class="Container">
+                    <div id="Package7Img" class="packageImg">
+                        <img src="img/Package7.png" alt="Package1 10 feet dock image">
+                    </div>
+                    <div id="Package7Text" class="packageText">
+                        <div>
+                            <h3>10 Feet Length Price</h3>
+                            <table>
+                                <tr>
+                                    <th>Width</th>
+                                    <th>Price</th>
+                                </tr>
+                                <tr>
+                                    <td>4 Feet Wide</td>
+                                    <td>$2,788</td>
+                                </tr>
+                                <tr>
+                                    <td>5 Feet Wide</td>
+                                    <td>$3,295</td>
+                                </tr>
+                                <tr>
+                                    <td>6 Feet Wide</td>
+                                    <td>$3,803</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Container">
+                    <div id="Package7Img" class="packageImg">
+                        <img src="img/Package7_2.png" alt="Package1 10 feet dock image">
+                    </div>
+                    <div id="Package7Text" class="packageText">
+                        <div>
+                            <h3>8 Feet Length Price</h3>
+                            <table>
+                                <tr>
+                                    <th>Width</th>
+                                    <th>Price</th>
+                                </tr>
+                                <tr>
+                                    <td>4 Feet Wide</td>
+                                    <td>$2,397</td>
+                                </tr>
+                                <tr>
+                                    <td>5 Feet Wide</td>
+                                    <td>$2,904</td>
+                                </tr>
+                                <tr>
+                                    <td>6 Feet Wide</td>
+                                    <td>$3,412</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>Includes 6) 6' legs, bottom pads, safety caps, 3 finish end caps, 3 leg brace kits, 1 L-kit, 1 starter kit</p>
+        </div>
+
+        <!--Package8 Section-->
+        <div id="Package8" class="Package">
+            <h2>Package No. 8</h2>
+            <div class="box">
+                <div class="Container">
+                    <div id="Package8Img" class="packageImg">
+                        <img src="img/Package8.png" alt="Package1 10 feet dock image">
+                    </div>
+                    <div id="Package8Text" class="packageText">
+                        <div>
+                            <h3>10 Feet Length Price</h3>
+                            <table>
+                                <tr>
+                                    <th>Width</th>
+                                    <th>Price</th>
+                                </tr>
+                                <tr>
+                                    <td>4 Feet Wide</td>
+                                    <td>$5,329</td>
+                                </tr>
+                                <tr>
+                                    <td>5 Feet Wide</td>
+                                    <td>$6,392</td>
+                                </tr>
+                                <tr>
+                                    <td>6 Feet Wide</td>
+                                    <td>$7,455</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Container">
+                    <div id="Package8Img" class="packageImg">
+                        <img src="img/Package8_2.png" alt="Package1 10 feet dock image">
+                    </div>
+                    <div id="Package8Text" class="packageText">
+                        <div>
+                            <h3>8 Feet Length Price</h3>
+                            <table>
+                                <tr>
+                                    <th>Width</th>
+                                    <th>Price</th>
+                                </tr>
+                                <tr>
+                                    <td>4 Feet Wide</td>
+                                    <td>$4,547</td>
+                                </tr>
+                                <tr>
+                                    <td>5 Feet Wide</td>
+                                    <td>$5,610</td>
+                                </tr>
+                                <tr>
+                                    <td>6 Feet Wide</td>
+                                    <td>$6,673</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>Includes 8) 6' legs, bottom pads, safety caps, 6 finish end caps, 4 leg brace kits, 2 L-kits</p>
+        </div>
+
+        <!--Package9 Section-->
+        <div id="Package9" class="Package">
+            <h2>Package No. 9</h2>
+            <div class="box">
+                <div class="Container">
+                    <div id="Package9Img" class="packageImg">
+                        <img src="img/Package9.png" alt="Package1 10 feet dock image">
+                    </div>
+                    <div id="Package9Text" class="packageText">
+                        <div>
+                            <h3>10 Feet Length Price</h3>
+                            <table>
+                                <tr>
+                                    <th>Width</th>
+                                    <th>Price</th>
+                                </tr>
+                                <tr>
+                                    <td>4 Feet Wide</td>
+                                    <td>$7,059</td>
+                                </tr>
+                                <tr>
+                                    <td>5 Feet Wide</td>
+                                    <td>$8,388</td>
+                                </tr>
+                                <tr>
+                                    <td>6 Feet Wide</td>
+                                    <td>$9,718</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Container">
+                    <div id="Package9Img" class="packageImg">
+                        <img src="img/Package9_2.png" alt="Package1 10 feet dock image">
+                    </div>
+                    <div id="Package9Text" class="packageText">
+                        <div>
+                            <h3>8 Feet Length Price</h3>
+                            <table>
+                                <tr>
+                                    <th>Width</th>
+                                    <th>Price</th>
+                                </tr>
+                                <tr>
+                                    <td>4 Feet Wide</td>
+                                    <td>$6,081</td>
+                                </tr>
+                                <tr>
+                                    <td>5 Feet Wide</td>
+                                    <td>$7,411</td>
+                                </tr>
+                                <tr>
+                                    <td>6 Feet Wide</td>
+                                    <td>$8,740</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>Includes 14) 6' legs, bottom pads, safety caps, 4 finish end caps, 6 leg brace kits, 2 L-kits, 2 starter kits</p>
+        </div>
+
+    </div>
+
+    <!--Footer-->
+    <div id="footer">
+        <div class="card" style="width: 18rem; border: none; background-color: inherit;">
+            <div class="card-body">
+                <h5 class="card-title">Copyright</h5>
+                <p class="card-text">Copyright 2016 E-Z Docking Solutions LLC. All rights reserved.</p>
+                <a href="http://nhdocks.com/home#:~:text=Web%20Hosting%20by%20Aabaco" class="card-link">Web Hosting by Aabaco</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem; border: none; background-color: inherit;">
+            <div class="card-body">
+                <h5 class="card-title">Contact</h5>
+                <p class="card-text">ph: (603) 942-7355</p>
+                <a href="mailto:ezdocking@yahoo.com" class="card-link">ezdocking@yahoo.com</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem; border: none; background-color: inherit;">
+            <div class="card-body">
+                <h5 class="card-title">Address</h5>
+                <p class="card-text">E-Z Docking Solutions LLC 1548 First NH Turnpike Northwood, NH 03261</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

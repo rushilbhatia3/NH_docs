@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Z Docking Solutions LLC - Home</title>
+
+    <link rel="icon" href="../../img/EZIcon.png">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="js/contact.js"></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+
+<body>
+    <!--NavBar-->
+    <nav class="navbar fixed-top navbar-expand-lg justify-content-center">
+        <a class="navbar-brand" href="#"><img src="../../img/EZIcon.png" alt="EZ Icon"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-around" id="navbarNavDropdown" style="flex-grow: 0;">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../../index.html">Main Page</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="../../index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../pages/price/price.html">Dock Packages and Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../pages/contact/contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Other Links
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="../../pages/sureStep/sureStep.html">Sure-Step</a>
+                        <a class="dropdown-item" href="../../pages/partsAcessories/partsAccessories.html">Dock Parts and Accessories</a>
+                        <a class="dropdown-item" onclick="warranty()">Warranty</a>
+                        <a class="dropdown-item" href="/pages/testimonialFeedback../../testimonialFeedback.html">Testimonials and Feedback</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Warranty Pop-up-->
+    <div id="surround" onclick="surround()">
+        <div id="warranty">
+            <h2>Warranty</h2>
+            <div id="warrantyText">
+                E-Z Docking Solutions LLC warranties all E-Z Docking Solutions brand docks purchased new by the original owner to be free from defects in the aluminum structure and welds for a period of 15 years. E-Z Docking Solutions LLC will at its option, repair or replace, without charge, or allow credit for any such goods found on examination by E-Z Docking Solutions to be defective under normal use and service, provided E-Z Docking Solutions is promptly notified in writing upon discovery of such defects. The buyers remedies with respect to defective goods shall be exclusively limited as provided above, and in no event shall E-Z Docking Solutions be liable for incidental or consequential damages of any nature. All repair work must be done by E-Z Docking Solutions. This warranty does not cover damage caused by improper use, installation, removal, overloading accident, neglect or harmful alterations or repairs made by others, damage by snow or ice, fallen trees, boat collisions, electrolysis, severe weather conditions, acts of war, and all acts of God.
+            </div>
+            <h3>E-Z Docking Solutions, LLC</h3>
+        </div>
+    </div>
+
+    <!--Main Content-->
+    <div id="mainContent">
+
+        <!--Welcome Section-->
+        <div id="welcome">
+
+            <div id="imageHolder">
+                <img src="../../img/Shore.jpg" alt="Background for the Main Dock Image">
+            </div>
+
+            <div id="welcomeText">
+                <h1>E-Z Docking Solutions</h1>
+                <p>Check out our NEW Kayak Launch Dock in Other Products!!!</p>
+            </div>
+
+            <div id="intro" style="text-align: center;">
+                <h2>Contact Us</h2>
+                <div style="display: flex; flex-wrap: wrap;width: 100%;justify-content: space-around;">
+                    <h3>Questions?</h3><h3>Comments?</h3>
+                </div>
+                <p>Submit the form below and we will get back to you soon!</p>
+            </div>
+
+        </div>
+
+        <!--Map Section-->
+        <div class="box">
+            <div class="boxImage" style="width: auto !important">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2907.3945035918505!2d-71.27120194377032!3d43.22218776125185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e263e3e29caba7%3A0x72725f9119bd6e14!2sEZ%20Docking%20Solutions!5e0!3m2!1sen!2sus!4v1646513343921!5m2!1sen!2sus" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <div class="boxText" style="width: 48% !important;">
+                <h2>We are located at:</h2>
+                <p><b>1548 First NH Turnpike<br>(Route 4)</b></p>
+                <p><b>Northwood, NH 03261</b></p>
+                <h2>Call us today!</h2>
+                <h3>(603) 942-7355</h3>
+                <p><b>Email:</b> <a href="mailto:ezdocking@yahoo.com">ezdocking@yahoo.com</a></p>
+                <h3>Don't forget to like us on <a href="https://www.facebook.com/E-Z-Docking-Solutions-110275449034725/">Facebook!</a> </h3>
+            </div>
+        </div>
+
+        <!--Comment Submition Section-->
+        <div class="box" id="commentSect">
+            <form>
+                <div style="display: flex;flex-wrap: wrap;flex-direction: row;justify-content: space-around;">
+                    <div style="display: grid;">
+                        <label for="fname">First name:</label>
+                        <input id="fname" type="text" id="fname" name="fname" required="true">
+                    </div>
+                    <div style="display: grid;">
+                        <label for="lname">Last name:</label>
+                        <input id="lname" type="text" id="lname" name="lname" required="true">
+                    </div>
+                    <div style="display: grid;">
+                        <label for="email">Email:</label>
+                        <input id="email" type="email" id="email" name="email" required="true">
+                    </div>
+                    <div style="display: grid;">
+                        <label for="phone">Phone:</label>
+                        <input id="tel" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                    </div>
+                    <div style="display: grid;">
+                        <label for="company">Company:</label>
+                        <input id="company" type="text" id="company" name="company">
+                    </div>
+                </div>
+                <div style="display: grid;text-align: center;">
+                    <div style="display: grid;justify-items: center;">
+                        <label for="topic">Topic:</label>
+                        <select id="topic" type="" name="topic" style="width: 25%;">
+                            <option value="default">Default</option>
+                            <option value="return">Returns</option>
+                            <option value="price">Pricing</option>
+                            <option value="date">Date</option>
+                        </select>
+                    </div>
+                    <label for="comment"><h1>Comment:</h1></label>
+                    <textarea id="comment" name="comment" cols="30" rows="10" required="true"></textarea>
+                </div>
+                <div style="display:flex;flex-wrap: wrap;justify-content: space-evenly;align-items: center;">
+                    <input onclick="SubmitFeedback()" id="submit" name="submit" style="width:25%" type="submit" value="Submit">
+                    <input onclick="ResetFeedback()" id="reset" name="reset" style="width:25%" type="button" value="Reset">
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <!--Footer-->
+    <div id="footer">
+        <div class="card" style="width: 18rem; border: none; background-color: inherit;">
+            <div class="card-body">
+                <h5 class="card-title">Copyright</h5>
+                <p class="card-text">Copyright 2016 E-Z Docking Solutions LLC. All rights reserved.</p>
+                <a href="http://nhdocks.com/home#:~:text=Web%20Hosting%20by%20Aabaco" class="card-link">Web Hosting by Aabaco</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem; border: none; background-color: inherit;">
+            <div class="card-body">
+                <h5 class="card-title">Contact</h5>
+                <p class="card-text">ph: (603) 942-7355</p>
+                <a href="mailto:ezdocking@yahoo.com" class="card-link">ezdocking@yahoo.com</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem; border: none; background-color: inherit;">
+            <div class="card-body">
+                <h5 class="card-title">Address</h5>
+                <p class="card-text">E-Z Docking Solutions LLC 1548 First NH Turnpike Northwood, NH 03261</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
